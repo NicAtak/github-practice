@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        }
+        html, body {
+            height: 100vh;
+        }
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 33.3%;
+        padding: 10px;
+        height: 100vh; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .main-header {
+            height: 75px;
+            background-color: #ccc;
+            text-align: center;
+        }
+        .main-footer {
+            height: 400px;
+            background-color: #ccc;
+            text-align: center;
+              
+        }
+        </style>
+    </head>
+<body>
+    <header class="main-header">
+        <h3>My Cool Header ( this is where my nav will go )</h3>
+    </header>
+    <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#ddd;">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+    </div>
+    </div>
+    <footer class="main-footer">
+        <h3>My Cool Footer ( this is where my copywrite will go )</h3>
+    </footer>
+</body>
+</html>
