@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>  
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body {
+                box-sizing: border-box;
+
+            
+            }
+            .pink{
+                color:rgb(170, 25, 228);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .contact-form{
+                margin-top: 200px !important;
+                width: 600px;
+                background-color: rgb(147, 235, 147);
+                padding: 20px;
+                margin: 0px auto;
+                border-radius: 30px;
+                border: 10px solid rgb(158, 18, 158);
+            }
+            label {
+                color: rgb(180, 20, 243);
+            }
+            label, input, textarea{
+                
+                display: block;
+                border-radius: 10px;
+            }
+            input, textarea {
+                margin-top: 5px 0px;
+                padding: 10px;
+                width: calc(100% - 60px);
+            }
+            .submit-button {
+                width: 100px;
+                background-color: pink;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <form class="contact-form" action="someserver.com/some-file.php">
+            <h1 class="pink">Contact Us</h1>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="first-name...">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="last-name...">
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="email...">
+            <label for="questions">Questions:</label>
+            <textarea id="questions" rows="10" cols="70">Leave a Question</textarea>
+            <input class="submit-button" type="submit" value="send">
+            
+        </form>
+
+
+
+    </body>
+</html>
